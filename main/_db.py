@@ -36,7 +36,7 @@ class Database:
             "request_id_context",
             default="",
         )
-
+        # Init the engine
         self.engine = create_async_engine(
             config.SQLALCHEMY_DATABASE_URI,
             echo=config.SQLALCHEMY_ECHO,
